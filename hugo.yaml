@@ -98,15 +98,15 @@ params:
       - title: "1st Place — Hackapizza 2.0: Agent Edition"
         content: "Multi-agent AI competition by Datapizza (Milan, 2026) — 120 selected participants"
         emoji: "🥇"
-        url: https://github.com/AlessioChen/HACKAPIZZA-2.0
+        url:  https://datapizza.tech/it/blog/hackapizza-20-quando-gli-agenti-devono-guadagnarsi-da-vivere
       - title: "1st Place — Llama Roma Impact Hackathon"
         content: "AI hackathon (Rome, 2024) — 400+ participants, 40+ submissions"
         emoji: "🥇"
         url: https://lablab.ai/event/hackathon-llama-impatto-roma/trai/traish
-      - title: "3rd Place — Paris AI Hackathon"
-        content: "By Tech: Paris (2025) — 120 applicants, 20 teams"
+      - title: "3rd Place — Tech Europe AI Hackathon"
+        content: "Paris (2025) — 120 applicants, 20 teams"
         emoji: "🥉"
-        url: https://blog.techeurope.io/p/hackathon-paris-1
+        url: https://blog.techeurope.io/p/the-ai-yoga-coach-that-won-paris-hackathon-3f977b79dcacc81c
       - title: "Most Promising AI x Web3 Project"
         content: "Encode Club Hackathon (London, 2024)"
         url: https://www.binance.com/en/square/post/5637062485346
@@ -126,6 +126,8 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/AlessioChen/HACKAPIZZA-2.0
+          - icon: fas fa-external-link-alt
+            url: https://datapizza.tech/it/blog/hackapizza-20-quando-gli-agenti-devono-guadagnarsi-da-vivere
 
       - title: "yolo-negative-flip"
         date: "Jan 2026"
@@ -149,7 +151,7 @@ params:
         links:
           - icon: fas fa-file-alt
             url: https://arxiv.org/html/2509.10129v1
-          - icon: fas fa-brain
+          - icon: fas fa-external-link-alt
             url: https://huggingface.co/letxbe/DocExplainer
 
 
@@ -262,6 +264,18 @@ params:
             url: https://github.com/AlessioChen/React-Book-Finder
           - icon: fas fa-external-link-alt
             url: https://book-finer.netlify.app/#/
+      - title: "Laravel Blog API"
+        date: "Jun 2021"
+        content: "REST API built with Laravel for a blogging platform. Features JWT authentication, paginated/filterable feed, post CRUD, user tagging with email notifications, and an action log table for all post events."
+        badges:
+          - "PHP"
+          - "Laravel"
+          - "MySQL"
+          - "Docker"
+          - "REST API"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/AlessioChen/LaravelBlogApi
       - title: "Socialdesk"
         date: "Nov 2020"
         content: "Decentralized blogging platform built on the Ethereum blockchain."
