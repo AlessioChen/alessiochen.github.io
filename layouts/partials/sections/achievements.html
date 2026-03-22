@@ -1,0 +1,35 @@
+{{ if .Site.Params.achievements.enable | default false }}
+{{- $achievements := .Site.Language.Params.achievements | default .Site.Params.achievements -}}
+<section id="achievements" class="py-2">
+    <div class="container">
+        <h3 class="text-center">{{ $achievements.title | default .Site.Params.achievements.title | default (i18n "achievements") }}</h3>
+        <div class="row justify-content-center px-3 px-md-5">
+            {{ range $achievements.items | default .Site.Params.achievements.items }}
+            <div class="col-lg-8 col-md-10 my-1">
+                {{ if .url }}
+                <a href="{{ .url }}" target="_blank" class="card my-1 p-2 px-3 text-decoration-none" title="{{ .title }}">
+                    <div class="card-body bg-transparent p-0 d-flex align-items-start">
+                        <span class="me-2" style="font-size: 1.3rem;">{{ .emoji }}</span>
+                        <div>
+                            <h6 class="card-title bg-transparent mb-0">{{ .title }}</h6>
+                            <small class="card-text secondary-font">{{ .content }}</small>
+                        </div>
+                    </div>
+                </a>
+                {{ else }}
+                <div class="card my-1 p-2 px-3" title="{{ .title }}">
+                    <div class="card-body bg-transparent p-0 d-flex align-items-start">
+                        <span class="me-2" style="font-size: 1.3rem;">{{ .emoji }}</span>
+                        <div>
+                            <h6 class="card-title bg-transparent mb-0">{{ .title }}</h6>
+                            <small class="card-text secondary-font">{{ .content }}</small>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

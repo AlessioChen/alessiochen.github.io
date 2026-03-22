@@ -1,0 +1,9 @@
+public/
+resources/
+.hugo_build.lock
+*.aux
+*.bcf
+*.log
+*.out
+*.run.xml
+cv_latex/

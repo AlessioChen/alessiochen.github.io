@@ -1,0 +1,296 @@
+baseURL: "https://alessiochen.github.io/"
+languageCode: "en-us"
+title: "Alessio Chen"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: cv
+      name: CV
+      url: /cv.pdf
+      weight: 4
+
+params:
+  title: "Alessio Chen"
+  description: "AI Engineer & Full-Stack Developer"
+  favicon: "/images/favicon.jpeg"
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "dark"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandName: "Alessio Chen"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: true
+      disableExperience: true
+      disableEducation: true
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Hi, I'm"
+    title: "Alessio Chen."
+    subtitle: "AI Engineer & Full-Stack Developer"
+    content: "AI Engineer and Full-Stack Developer based in Italy. Research experience in Vision-Language Models. Multiple hackathon winner. I build AI systems and ship full-stack projects."
+    image: /images/profile.jpeg
+    roundImage: true
+    bottomImage:
+      enable: false
+    button:
+      enable: true
+      name: "View CV"
+      url: /cv.pdf
+      download: false
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/AlessioChen
+        - icon: fab fa-linkedin
+          url: https://linkedin.com/in/alessiochen
+        - icon: fas fa-envelope
+          url: mailto:alessiochen98@gmail.com
+
+  about:
+    enable: false
+
+  experience:
+    enable: false
+
+  education:
+    enable: false
+
+  achievements:
+    enable: true
+    items:
+      - title: "1st Place — Hackapizza 2.0: Agent Edition"
+        content: "Multi-agent AI competition by Datapizza (Milan, 2026) — 120 selected participants"
+        emoji: "🥇"
+        url: https://github.com/AlessioChen/HACKAPIZZA-2.0
+      - title: "1st Place — Llama Roma Impact Hackathon"
+        content: "AI hackathon (Rome, 2024) — 400+ participants, 40+ submissions"
+        emoji: "🥇"
+        url: https://lablab.ai/event/hackathon-llama-impatto-roma/trai/traish
+      - title: "3rd Place — Paris AI Hackathon"
+        content: "By Tech: Paris (2025) — 120 applicants, 20 teams"
+        emoji: "🥉"
+        url: https://blog.techeurope.io/p/hackathon-paris-1
+      - title: "Most Promising AI x Web3 Project"
+        content: "Encode Club Hackathon (London, 2024)"
+        url: https://www.binance.com/en/square/post/5637062485346
+        emoji: "🏆"
+
+  projects:
+    enable: true
+    items:
+    
+      - title: "HACKAPIZZA 2.0"
+        date: "Mar 2026"
+        content: "Multi-agent system for a competitive galactic restaurant simulation. Event-driven architecture with specialized agents, shared memory, and real-time SSE communication."
+        badges:
+          - "Python"
+          - "Multi-Agent"
+          - "AI"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/AlessioChen/HACKAPIZZA-2.0
+
+      - title: "yolo-negative-flip"
+        date: "Jan 2026"
+        content: "Mathematical method to quantify performance regressions between object detection models using a negative flip metric. Revealed that most regressions stem from localization errors."
+        badges:
+          - "Python"
+          - "PyTorch"
+          - "Computer Vision"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/AlessioChen/yolo-negative-flip
+
+      - title: "DocExplainer"
+        date: "Oct 2025"
+        content: "Document VQA system with bounding-box localization. Paper accepted at VisionDocs Workshop (ICCV 2025)."
+        badges:
+          - "Python"
+          - "HuggingFace"
+          - "PyTorch"
+          - "VLM"
+        links:
+          - icon: fas fa-file-alt
+            url: https://arxiv.org/html/2509.10129v1
+          - icon: fas fa-brain
+            url: https://huggingface.co/letxbe/DocExplainer
+
+
+      - title: "Easy MCP"
+        date: "May 2025"
+        content: "Convert OpenAPI specifications to the MCP (Model Context Protocol) format. Monorepo with utilities, testing server, and documentation site."
+        badges:
+          - "TypeScript"
+          - "MCP"
+          - "OpenAPI"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/AlessioChen/easymcp
+
+      - title: "Traish"
+        date: "Dec 2024"
+        content: "AI-powered waste management system providing real-time guidance for recycling compliance using computer vision and LLM-based reasoning."
+        badges:
+          - "Python"
+          - "Computer Vision"
+          - "LLM"
+        links:
+          - icon: fas fa-external-link-alt
+            url: https://lablab.ai/event/hackathon-llama-impatto-roma/trai/traish
+
+
+
+      - title: "Veridian"
+        date: "Nov 2024"
+        content: "AI-powered career platform with intelligent job matching and resume analysis. Full-stack application with separate frontend and backend services."
+        badges:
+          - "TypeScript"
+          - "AI"
+          - "Full-Stack"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/AlessioChen/Veridian-Front-End
+          - icon: fab fa-github
+            url: https://github.com/AlessioChen/Veridian-Backend
+
+   
+      - title: "DES Algorithm Performance Comparison"
+        date: "Mar 2024"
+        content: "Sequential vs parallel DES decryption using Python asyncio. Benchmarked execution times and scalability with varying passwords and threads."
+        badges:
+          - "Python"
+          - "asyncio"
+          - "Cryptography"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/AlessioChen/DES-Algorithm-Performance-Comparison-using-asyncio
+
+      - title: "Random Maze Solver with OpenMP"
+        date: "Mar 2024"
+        content: "Parallel maze solver using OpenMP. Generates random mazes via DFS and solves them with particle-based exploration. Benchmarked sequential vs parallel with thread and particle scalability tests."
+        badges:
+          - "C++"
+          - "OpenMP"
+          - "Parallel Computing"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/AlessioChen/Random-Maze-Solver-with-OpenMP
+
+      - title: "Multi-Class Logistic Regression"
+        date: "May 2024"
+        content: "Multi-class logistic regression with gradient descent (Armijo line search) and trust region optimization (Cauchy step). Benchmarked on real-world classification datasets."
+        badges:
+          - "Python"
+          - "NumPy"
+          - "Optimization"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/AlessioChen/Multi-Class-Logistic-Regression-with-Optimization-Methods
+
+      - title: "Vue.js E-commerce"
+        date: "May 2022"
+        content: "Food e-commerce demo with Vuex4, Vue Router, Axios, and Tailwind CSS. Includes authentication, cart management, and persistent state."
+        badges:
+          - "Vue.js"
+          - "Vuex"
+          - "Tailwind CSS"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/AlessioChen/VueJs-Eccomerce
+          - icon: fas fa-external-link-alt
+            url: https://silly-elion-99ee40.netlify.app/login
+
+      - title: "Tic Tac Toe"
+        date: "May 2022"
+        content: "Simple tic tac toe game built with Vue.js Composition API."
+        badges:
+          - "Vue.js"
+          - "JavaScript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/AlessioChen/tic-tac-toe
+          - icon: fas fa-external-link-alt
+            url: https://upbeat-golick-4e318a.netlify.app/
+   
+
+      - title: "React Book Finder"
+        date: "May 2021"
+        content: "Book search app using the Google Books API. Built with React, Axios, Tailwind CSS, and React Router."
+        badges:
+          - "React"
+          - "Tailwind CSS"
+          - "API"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/AlessioChen/React-Book-Finder
+          - icon: fas fa-external-link-alt
+            url: https://book-finer.netlify.app/#/
+      - title: "Socialdesk"
+        date: "Nov 2020"
+        content: "Decentralized blogging platform built on the Ethereum blockchain."
+        badges:
+          - "Solidity"
+          - "Ethereum"
+          - "Web3"
+          - "Django"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/AlessioChen/socialdesk
+
+  contact:
+    enable: true
+    content: "Feel free to reach out — whether you have a question, a project idea, or just want to say hi."
+    btnName: Email me
+    btnLink: mailto:alessiochen98@gmail.com
+
+  footer:
+    recentPosts:
+      enable: false
+    socialNetworks:
+      github: https://github.com/AlessioChen
+      linkedin: https://linkedin.com/in/alessiochen
+
+  listPages:
+    disableFeaturedImage: true
+
+  singlePages:
+    socialShare: false
+    readTime:
+      enable: false
